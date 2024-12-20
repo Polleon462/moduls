@@ -4,75 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:wght@700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>BarberShop</title>
   </head>
   <body>
-    <header>
+    <!-- Header -->
+    <header class="header">
+      <!-- Navigation -->
       <nav>
+        <!-- Logo -->
         <a href="./index.html">
           <img src="./imgs/WebStudio.svg" alt="Logo" />
         </a>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="">Seervices and prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="">Contacts</a></li>
+        <!-- Nav -->
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a href="#about" class="nav-link link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link link">Seervices and prices</a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link link">Barbers</a></li>
+          <li class="nav-item">
+            <a href="" class="nav-link link">Contacts</a>
+          </li>
         </ul>
       </nav>
-      <a href="tel:380441111111">+ 38 044 111 11 11</a>
-      <button type="button">Online booking</button>
+      <a href="tel:380441111111" class="header-tel link">+ 38 044 111 11 11</a>
+      <!-- BTN -->
+      <button type="button" class="header-btn btn">Online booking</button>
     </header>
+    <!-- MAIN -->
     <main>
+      <!-- HERO -->
       <section class="hero">
-        <ul>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer nofolow"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer nofolow"
-              >Youtube</a
-            >
-          </li>
-        </ul>
-        <p>A hair salon for mans</p>
-        <h1>BarberShop</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, animi!
-        </p>
+        <div>
+          <ul class="hero-list list">
+            <li class="hero-list-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofolow"
+                class="hero-link link"
+                >Instagram</a
+              >
+            </li>
+            <li class="hero-list-item">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofolow"
+                class="hero-link link"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+          <p class="hero-text">A hair salon for mans</p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            animi!
+          </p>
+        </div>
       </section>
+
+      <!-- ABOUT -->
       <section class="about">
-        <ul>
-          <li>
-            <img
-              src="./imgs/haircut1.jpg"
-              alt="haircut photo"
-              width="270"
-              height="445" />
-          </li>
-          <li>
-            <img
-              src="./imgs/haircut2.jpg"
-              alt="haircut photo"
-              width="270"
-              height="445" />
-          </li>
-        </ul>
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur,
-          alias.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ipsam
-          dolore porro numquam, qui ab, in mollitia beatae ratione alias
-          eligendi doloribus libero ipsum eos. Dolorum explicabo alias nulla
-          neque?
-        </p>
-        <button type="button">Online booking</button>
+        <div>
+          <ul>
+            <li>
+              <img
+                src="./imgs/haircut1.jpg"
+                alt="haircut photo"
+                width="270"
+                height="445" />
+            </li>
+            <li>
+              <img
+                src="./imgs/haircut2.jpg"
+                alt="haircut photo"
+                width="270"
+                height="445" />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="about-title">About</h2>
+          <h3 class="about-sub-title">Best Barbershop in your city</h3>
+          <p class="about-discription">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Aspernatur, alias.
+          </p>
+          <p class="about-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            ipsam dolore porro numquam, qui ab, in mollitia beatae ratione alias
+            eligendi doloribus libero ipsum eos. Dolorum explicabo alias nulla
+            neque?
+          </p>
+          <button type="button" class="about-btn btn">Online booking</button>
+        </div>
       </section>
       <section class="prices">
         <p>spend your time with the best barber</p>
@@ -113,7 +148,7 @@
             <p>from 200 u.h</p>
           </li>
         </ul>
-        <button type="button">Online booking</button>
+        <button type="button" class="btn">Online booking</button>
       </section>
       <section>
         <ul>
