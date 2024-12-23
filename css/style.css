@@ -9,16 +9,32 @@
 body {
   font-family: "Open Sans", Verdana, sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
 .btn {
+  min-width: 160px;
+  padding: 11px 19px;
+
   font-family: "Open_Sans", sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -28,7 +44,7 @@ body {
   cursor: pointer;
   background-color: transparent;
 
-  border: 1px solid #ffffff;
+  border: 1px solid var(--acent-color);
   border-radius: 25px;
 }
 /* HEADER */
@@ -65,7 +81,7 @@ body {
 
 .header-btn:hover,
 .header-btn:focus {
-  border-color: var(--acent-color);
+  background-color: var(--acent-color);
 }
 
 /* ---------------HERO------------- */
@@ -92,6 +108,9 @@ body {
 }
 
 .hero-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -100,6 +119,8 @@ body {
 }
 
 .hero-title {
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 72px;
@@ -108,6 +129,7 @@ body {
   color: var(--main-title-color);
 }
 .hero-description {
+  width: 360px;
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
@@ -115,7 +137,12 @@ body {
 }
 
 /* --------------ABOUT------------ */
+.about-right-side {
+  width: 470px;
+}
+
 .about-title {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
