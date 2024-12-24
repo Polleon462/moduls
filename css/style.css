@@ -17,6 +17,9 @@ h5,
 h6 {
   margin: 0;
 }
+p {
+  margin: 0;
+}
 
 .list {
   list-style: none;
@@ -223,7 +226,43 @@ img {
 .about-btn:focus {
   border-color: var(--acent-color);
   background-color: var(--acent-color);
-  color: var(--secondary-title-color);
+  color: var(--main-btn-color);
 }
 
 /* ====------------PRICES---------------- */
+.prices {
+  background-color: gray;
+}
+
+.price-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-list {
+  flex-basis: 570px;
+  outline: 1px solid green;
+  margin-bottom: 44px;
+  padding: 30px 20px;
+}
+
+.price-item {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+.price-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.line {
+  display: block;
+  flex-grow: 1;
+  height: 1px;
+  background-color: #fff;
+}
+
+.price-btn {
+  display: block;
+  margin: 0 auto;
+}
