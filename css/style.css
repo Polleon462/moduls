@@ -31,6 +31,15 @@ h6 {
 img {
   display: block;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
+
 .btn {
   min-width: 160px;
   padding: 11px 19px;
@@ -47,12 +56,30 @@ img {
   border: 1px solid var(--acent-color);
   border-radius: 25px;
 }
-/* HEADER */
+/* ---------------HEADER-------------- */
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .header {
   background-color: gray;
 }
+.header-logo {
+  margin-right: 138px;
+}
+.header-nav {
+  margin-right: auto;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 /* navigation */
 .nav-link {
+  display: block;
+  padding-top: 52px;
+  padding-bottom: 52px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.3;
@@ -63,6 +90,12 @@ img {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--acent-color);
+}
+
+.header-group {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 /* TELEPHONE */
 .header-tel {
@@ -84,7 +117,7 @@ img {
   background-color: var(--acent-color);
 }
 
-/* ---------------HERO------------- */
+/* ------------------HERO---------------- */
 .hero {
   background-color: grey;
 }
@@ -136,12 +169,24 @@ img {
   color: #9da48d;
 }
 
-/* --------------ABOUT------------ */
+/* ====--------------ABOUT------------------- */
+.about-container {
+  display: flex;
+}
+.about-list {
+  display: flex;
+  margin-right: 30px;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .about-right-side {
   width: 470px;
 }
 
 .about-title {
+  margin-top: 0;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -177,4 +222,8 @@ img {
 .about-btn:hover,
 .about-btn:focus {
   border-color: var(--acent-color);
+  background-color: var(--acent-color);
+  color: var(--secondary-title-color);
 }
+
+/* ====------------PRICES---------------- */

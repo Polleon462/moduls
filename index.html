@@ -4,98 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Modern Normalise -->
+    <!-- ---------MODERN NORMALIZE----------- -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
       integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <!-- CSS  -->
+    <!-- ---------FONTS----------- -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:wght@700&display=swap"
       rel="stylesheet" />
+    <!-- ---------CSS----------- -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- ---------TITLE----------- -->
     <title>BarberShop</title>
   </head>
   <body>
-    <!-- Header -->
+    <!-- ---------HEADER----------- -->
     <header class="header">
-      <!-- Navigation -->
-      <nav>
+      <div class="header-container container">
         <!-- Logo -->
-        <a href="./index.html">
+        <a href="./index.html" class="header-logo">
           <img src="./imgs/WebStudio.svg" alt="Logo" />
         </a>
-        <!-- Nav -->
-        <ul class="nav-list list">
-          <li class="nav-item">
-            <a href="#about" class="nav-link link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link link">Seervices and prices</a>
-          </li>
-          <li class="nav-item"><a href="" class="nav-link link">Barbers</a></li>
-          <li class="nav-item">
-            <a href="" class="nav-link link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="tel:380441111111" class="header-tel link">+ 38 044 111 11 11</a>
-      <!-- BTN -->
-      <button type="button" class="header-btn btn">Online booking</button>
-    </header>
-    <!-- MAIN -->
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <div>
-          <ul class="hero-list list">
-            <li class="hero-list-item">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofolow"
-                class="hero-link link"
-                >Instagram</a
-              >
+        <!-- Navigation -->
+        <nav class="header-nav">
+          <!-- Nav -->
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a href="#about" class="nav-link link">About</a>
             </li>
-            <li class="hero-list-item">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofolow"
-                class="hero-link link"
-                >Youtube</a
-              >
+            <li class="nav-item">
+              <a href="" class="nav-link link">Seervices and prices</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link link">Barbers</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link link">Contacts</a>
             </li>
           </ul>
+        </nav>
+        <div class="header-group">
+          <a href="tel:380441111111" class="header-tel link"
+            >+ 38 044 111 11 11</a
+          >
+          <!-- BTN -->
+          <button type="button" class="header-btn btn">Online booking</button>
         </div>
-        <div>
-          <p class="hero-text">A hair salon for mans</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-            animi!
-          </p>
+      </div>
+    </header>
+    <!-- ---------MAIN----------- -->
+    <main>
+      <!-- ---------HERO----------- -->
+      <section class="hero">
+        <div class="container">
+          <div>
+            <ul class="hero-list list">
+              <li class="hero-list-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofolow"
+                  class="hero-link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-list-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofolow"
+                  class="hero-link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="hero-text">A hair salon for mans</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+              animi!
+            </p>
+          </div>
         </div>
       </section>
-
-      <!-- ABOUT -->
+      <!-- ---------ABOUT----------- -->
       <section class="about">
-        <div>
-          <ul class="list">
-            <li>
+        <div class="about-container container">
+          <ul class="about-list list">
+            <li class="about-item">
               <img
                 src="./imgs/haircut1.jpg"
                 alt="haircut photo"
                 width="270"
                 height="445" />
             </li>
-            <li>
+            <li class="about-item">
               <img
                 src="./imgs/haircut2.jpg"
                 alt="haircut photo"
@@ -103,66 +113,70 @@
                 height="445" />
             </li>
           </ul>
-        </div>
-        <div class="about-right-side">
-          <p class="about-title">About</p>
-          <h2 class="about-sub-title">Best Barbershop in your city</h2>
-          <p class="about-discription">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Aspernatur, alias.
-          </p>
-          <p class="about-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-            ipsam dolore porro numquam, qui ab, in mollitia beatae ratione alias
-            eligendi doloribus libero ipsum eos. Dolorum explicabo alias nulla
-            neque?
-          </p>
-          <button type="button" class="about-btn btn">Online booking</button>
+          <div class="about-right-side">
+            <p class="about-title">About</p>
+            <h2 class="about-sub-title">Best Barbershop in your city</h2>
+            <p class="about-discription">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur, alias.
+            </p>
+            <p class="about-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              ipsam dolore porro numquam, qui ab, in mollitia beatae ratione
+              alias eligendi doloribus libero ipsum eos. Dolorum explicabo alias
+              nulla neque?
+            </p>
+            <button type="button" class="about-btn btn">Online booking</button>
+          </div>
         </div>
       </section>
+      <!-- ---------PRICES----------- -->
       <section class="prices">
-        <p>spend your time with the best barber</p>
-        <h2>Servises and prices</h2>
-        <ul>
-          <li>
-            <p>Mans haircut</p>
-            <p>from 200 u.h</p>
-          </li>
-          <li>
-            <p>Beard triam</p>
-            <p>from 200 u.h</p>
-          </li>
-          <li>
-            <p>Mustache trim</p>
-            <p>from 200 u.h</p>
-          </li>
-          <li>
-            <p>Straight razorshave</p>
-            <p>from 200 u.h</p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <p>Trainee`s haircut</p>
-            <p>from 200 u.h</p>
-          </li>
-          <li>
-            <p>Haircut under the nozzle</p>
-            <p>from 200 u.h</p>
-          </li>
-          <li>
-            <p>Children haircut (0-12y.o.)</p>
-            <p>from 200 u.h</p>
-          </li>
-          <li>
-            <p>Camouflage of gray hair</p>
-            <p>from 200 u.h</p>
-          </li>
-        </ul>
-        <button type="button" class="btn">Online booking</button>
+        <div class="container">
+          <p>spend your time with the best barber</p>
+          <h2>Servises and prices</h2>
+          <ul class="list">
+            <li>
+              <p>Mans haircut</p>
+              <p>from 200 u.h</p>
+            </li>
+            <li>
+              <p>Beard triam</p>
+              <p>from 200 u.h</p>
+            </li>
+            <li>
+              <p>Mustache trim</p>
+              <p>from 200 u.h</p>
+            </li>
+            <li>
+              <p>Straight razorshave</p>
+              <p>from 200 u.h</p>
+            </li>
+          </ul>
+          <ul class="list">
+            <li>
+              <p>Trainee`s haircut</p>
+              <p>from 200 u.h</p>
+            </li>
+            <li>
+              <p>Haircut under the nozzle</p>
+              <p>from 200 u.h</p>
+            </li>
+            <li>
+              <p>Children haircut (0-12y.o.)</p>
+              <p>from 200 u.h</p>
+            </li>
+            <li>
+              <p>Camouflage of gray hair</p>
+              <p>from 200 u.h</p>
+            </li>
+          </ul>
+          <button type="button" class="btn">Online booking</button>
+        </div>
       </section>
-      <section>
-        <ul>
+      <!-- ---------FEATURS----------- -->
+      <section class="featurs">
+        <ul class="list">
           <li>
             <span>600</span>
             <sup>+</sup>
@@ -191,10 +205,11 @@
           eius.
         </p>
       </section>
+
       <section>
         <p>for true enjoyers of the Atmosphere</p>
         <h2>Our barbers</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="#" alt="" />
             <h3>John Smith</h3>
@@ -245,6 +260,7 @@
           </li>
         </ul>
       </section>
+
       <section>
         <h2>Galery</h2>
         <p></p>
@@ -255,9 +271,11 @@
           <li><img src="#" alt="Photo" /></li>
         </ul>
       </section>
+
       <section>
         <h2>Online booking</h2>
       </section>
+
       <section>
         <h2>Contacts</h2>
         <address>
@@ -280,6 +298,7 @@
         <p>Every day from 9 to 22:00</p>
       </section>
     </main>
+    <!-- ---------FOOTER----------- -->
     <footer>
       <p>&copy; Copyright 2020</p>
       <ul>
