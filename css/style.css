@@ -266,3 +266,11 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+/* ====------------TEAM---------------- */
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
