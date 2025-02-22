@@ -1,3 +1,8 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 :root {
   --main-title-color: #ffffff;
   --main-btn-color: #ffffff;
@@ -36,8 +41,7 @@ img {
 }
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid red;
@@ -58,6 +62,11 @@ img {
 
   border: 1px solid var(--acent-color);
   border-radius: 25px;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 /* ---------------HEADER-------------- */
 .header-container {
@@ -144,6 +153,10 @@ img {
 }
 
 .hero-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   margin-top: 0;
   margin-bottom: 20px;
 
@@ -152,6 +165,12 @@ img {
   line-height: calc(15 / 11);
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+}
+.hero-text::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
 }
 
 .hero-title {
@@ -173,6 +192,7 @@ img {
 }
 
 /* ====--------------ABOUT------------------- */
+
 .about-container {
   display: flex;
 }
@@ -231,6 +251,12 @@ img {
 
 /* ====------------PRICES---------------- */
 .prices {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, grey, rgba(85, 85, 233, 0.466));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: gray;
 }
 
@@ -245,6 +271,12 @@ img {
   margin-bottom: 44px;
   padding: 30px 20px;
 }
+.price-list:first-child {
+  background-image: linear-gradient(to bottom, grey, rgba(238, 221, 221, 0.3));
+}
+.price-list:last-child {
+  background-image: linear-gradient(to bottom, grey, rgba(238, 221, 221, 0.3));
+}
 
 .price-item {
   display: flex;
@@ -255,13 +287,18 @@ img {
   margin-bottom: 20px;
 }
 
-.line {
+.price-item::before {
+  content: "";
   display: block;
   flex-grow: 1;
   height: 1px;
+  margin-left: 12px;
+  margin-right: 12px;
   background-color: #fff;
 }
-
+.price-item-service {
+  order: -1;
+}
 .price-btn {
   display: block;
   margin: 0 auto;
